@@ -10,10 +10,17 @@
 	}
 	
 	p {
-		color: #00a20f;
+		color: #16202c;
 		background-color: rgba(0, 0, 0, 0.2);
 		border-radius: 3px;
 	}
+	
+	.form{
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 30px;	
+		padding: 60px;
+	}		
+	
 
 body {
 			background-image: url('../assets/images/grey.png');
