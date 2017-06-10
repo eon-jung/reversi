@@ -4,7 +4,9 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 	<title>Reversi Game Lobby</title>
-	
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico"> 	
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700" rel="stylesheet">
      <!-- CSS Style -->   
@@ -28,45 +30,59 @@
 		   </a>
 	     </div>
 	  </div>
-		<div class='row align-items-end' id='players'>
-			<div class='col-9 text-left'>
-				<h3>Players</h3>
-			</div>
-			<div class='col-3'>
-			</div>
-		
+
+ 		<!-- Name page Navigation -->
+		<div class="table-responsive">
+			<table align="center">
+				<thead>
+					<tr>
+   			     		<th>
+   			     			<a href='index.html'>
+							<img class="img-fluid" src="assets/images/Nav_01_home_deselect.png" width="90" alt="home" /></a>
+    		    		</th>
+     			   		<th>
+      		  				<a href='name.html'>
+							<img class="img-fluid" src="assets/images/Nav_02_name_deselect.png" width="90" alt="name" /></a>
+						</th>
+        				<th>
+							<img class="img-fluid" src="assets/images/Nav_03_invite_default.png" width="90" alt="invite" />    
+        				</th>
+        				<th>
+							<img class="img-fluid" src="assets/images/Nav_04_play_deselect.png" width="90" alt="play" />
+						</th>        
+      				</tr>
+    			</thead>
+			</table>  	
+		</div>	  
+	  
+	  	<!-- Form starts -->	
+	  	<div class='form'>  
+			<div class='row align-items-end' id='players'>
+				<div class='col-9 text-left'>
+					<h3>Players</h3>
+				</div>
+				<div class='col-3'>
+				</div>
 			<!-- This is where the new people in the lobby are going to go -->
 		
-		</div>
-		
-		
-		<div class='row'>
-			<div class='col text-left'>
-				<h3>Let's talk!</h3>			
-				<form class='form-inline' onsubmit='send_message(); return false;'>				
-					<label for='send_message_holder' class='col-form-label sr-only'>Enter your chat message</label>
-					<input class='form-control mx-auto w-75' type='text' value='' id='send_message_holder' placeholder='Enter your chat message' autocomplete='off'/>
-					<button type='submit' class='btn btn-lg btn-success'>Send</button>				
-				</form>
-			</div>
-		</div>					
-		<div class='row'>
-			<div class='col text-left'>
-				<div id='messages'>
+			</div>	
+			<div class='row'>
+				<div class='col text-left'>
+					<h3>Let's talk!</h3>			
+					<form class='form-inline' onsubmit='send_message(); return false;'>				
+						<label for='send_message_holder' class='col-form-label sr-only'>Enter your chat message</label>
+						<input class='form-control mx-auto w-75' type='text' value='' id='send_message_holder' placeholder='Enter your chat message' autocomplete='off'/>
+						<button type='submit' class='btn btn-lg btn-success'>Send</button>				
+					</form>
 				</div>
-			</div>
-		</div>
-		
-	  <div class="row">
-         <div class="col">
-		   <a href="name.html" class="btn btn-outline-success">< Go back</a>
-	     </div>
-         <div class="col">
-		   <a href="index.html" class="btn btn-outline-success">Home</a>
-	     </div>
-	  </div>		
-			
-	</div>
+			</div>					
+			<div class='row'>
+				<div class='col text-left'>
+					<div id='messages'>
+					</div>
+				</div>
+			</div>		
+		</div>		
 	
 	
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
