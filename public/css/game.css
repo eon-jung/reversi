@@ -41,3 +41,11 @@ td.hovered_over:hover {
 	background:url('../assets/images/hover.gif');
 	background-size: 100% 100%;
 }
+
+	.enter{
+		color: #ffec4f;
+	}
+	
+	.left{
+		color: #ff3333;
+	}	

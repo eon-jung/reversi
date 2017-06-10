@@ -86,7 +86,7 @@ socket.on('join_room_response',function(payload){
 
 	
 	/* Manage the message that a new player has joined */
-	var newHTML = '<p>'+payload.username+' just entered the room</p>';
+	var newHTML = '<p class="enter">'+payload.username+' just entered the room</p>';
 	var newNode = $(newHTML);
 	newNode.hide();
 	$('#messages').prepend(newNode);
@@ -118,7 +118,7 @@ socket.on('player_disconnected',function(payload){
 	}
 	
 	/* Manage the message that a player has left */
-	var newHTML = '<p>'+payload.username+' has left the room</p>';
+	var newHTML = '<p class="left">'+payload.username+' has left the room</p>';
 	var newNode = $(newHTML);
 	newNode.hide();
 	$('#messages').prepend(newNode);
